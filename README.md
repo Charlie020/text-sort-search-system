@@ -3,9 +3,13 @@
 ### 各文件说明：
 
 ①`TSSS.cpp`为主程序代码。
+
 ②`FunctionState.h`和`VarState.h`分别是源程序的头文件，分别为函数声明、变量声明文件。
+
 ③`StopWordList.txt`存放着停用词表，被源程序读写。
+
 ④`PreTreatFile.txt`中每一行的内容是需要建立索引的数据集的路径，被源程序读写。
+
 
 以上文件都应放在一起。
 
@@ -20,6 +24,8 @@
 ### 程序说明：
 
 ①程序运行时，会先读取`StopWordList.txt`中内容获取停用词。
+
 ②然后会逐行读取`PreTreatFile.txt`中内容，每读取一行就会到相应的数据集下，为其中所有文本文件建立倒排索引。
+
 
 ③程序也会根据用户的选项，判断是否需要更新`StopWordList.txt`和`PreTreatFile.txt`中内容。
